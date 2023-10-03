@@ -77,7 +77,7 @@ function AddItemForm({ onNewItem }) {
         e.preventDefault();
         setSubmitting(true);
         fetch('/items', {
-            method: 'POST',
+            method: 'GET',
             body: JSON.stringify({ name: newItem }),
             headers: { 'Content-Type': 'application/json' },
         })
